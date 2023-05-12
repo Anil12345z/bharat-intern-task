@@ -1,67 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+
+    <title>Anil's portfolio</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Oswald"
+        }
 
-    <meta name="description"
-        content="
-    A temperature converter helps in the conversion of the measurement units of the temperature recorded in a particular unit. Temperature expresses the degree of heat or cold of a solid, liquid, or gas. Temperature is measured using a thermometer.">
+        body {
+            font-family: "Open Sans"
+        }
 
-    <meta name="keywords" content="temperature converter, convert celsius to fahrenheit, convert fahrenheit to celsius">
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./Img/favicon.ico" type="image/x-icon">
+        /* Set the width of the sidebar to 120px */
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 
-    <title>Temperature Converter</title>
+        #main {
+            margin-left: 120px
+        }
+
+        /* Remove margins from "page content" on small screens */
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="w3-black">
 
-    <h1 class="text-center"> <span id="fa" class="fa"></span> Temperature Converter</h1>
 
-    <form class="text-center" id="tempCalc" onsubmit="calculateTemp(); return false">
-        <label for="temp">Please Enter the Temperature you'd like to convert.</label>
-        <div class="row my-3">
-            <div class="col">
-                <input type="number" step="any" id="temp" class="form-control">
+
+
+
+
+
+    </head>
+
+    <body class="w3-light-grey">
+
+        <!-- Navigation bar with social media icons -->
+
+
+
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">
+    My Portfolio
+</a>
+            <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+        </nav>
+
+
+
+
+        <div class="w3-padding-large" id="main">
+            <!-- Header/Home -->
+            <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+                <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Anil chahar</h1>
+                <p>(software engineer)</p>
+                <img src="12.jpg" alt="boy" class="w3-image" width="600" height="800">
+            </header>
+
+            <!-- About Section -->
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+                <h2 class="w3-text-light-grey">Anil Chahar</h2>
+                <hr style="width:200px" class="w3-opacity">
+                <p> I am an engineering student. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment
+                    as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines. having skills of electronics and software both, work well in both domains. currently i am open to work.
+                </p>
+                <br>
+                <h2> PROJECTS </h2>
+
+               
+                <h3 class="w3-padding-16 w3-text-light-grey"></h3>
+                <p class="w3-wide">hospital Management System</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+                </div>
+                <p class="w3-wide">Home Automation</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+                </div>
+                <p class="w3-wide">Portfolio website</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+                </div>
+                <p class="w3-wide">TrueRate college ranking website</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+                    
+                </div> 
+                <p class="w3-wide">cafe website</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+                    </div>
+                <br>
+
+
+
+                <!-- Grid for pricing tables -->
+                <h3 class="w3-padding-16 w3-text-light-grey">My Skills & Education</h3>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-dark-grey w3-xlarge w3-padding-32">SKILLS</li>
+                            <li class="w3-padding-16">Web design</li>
+                            <li class="w3-padding-16">Front end design</li>
+                            <li class="w3-padding-16">Java with DSA</li>
+                            <li class="w3-padding-16">Electronics Engineering</li>
+                            <li class="w3-padding-16">MYSql (database)</li>
+
+
+
+
+                        </ul>
+                    </div>
+
+                    <div class="w3-half">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-dark-grey w3-xlarge w3-padding-32">EDUCATION</li>
+                            <li class="w3-padding-16">B.tech<br>
+                                <p>Roorkee Institute Of Technology</p>
+                            </li>
+                            <li class="w3-padding-16">Intermediate<br>
+                                <p>Simpkins School</p>
+                            </li>
+                            <li class="w3-padding-16">Matriculation<br>
+                                <p>N C Educational Academy</p>
+                            </li>
+
+
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- End Grid/Pricing tables -->
+                </div>
+
+
+
+
+                <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <a href="https://drive.google.com/file/d/1zzI73h6kzgm3qOuio5pPVM5ws88FdljF/view?usp=share_link/"> <i class="fa fa-download"></i>Download Resume</a>
+      </button>
+                </li>
+
+
+
+                <button class="w3-button w3-white w3-padding-large w3-hover-black">
+          
+        <a href = "https://forms.gle/9dGqKgpdMRh9ZuhQA"><i class ></i>HIRE ME</a></button>
+                </li>
+
             </div>
-            <div class="col">
-                <select name="temp_diff" class="form-control" id="temp_diff">
-                    <option value="cel"><span>&#176;</span>Celsius</option>
-                    <option value="fah"><span>&#176;</span>Fahrenheit</option>
-                </select>
-            </div>
-        </div>
 
-        <!-- <input type="submit" class="d-flex justify-content-center mx-auto" name="temp"> -->
-        <button type="submit" class="btn btn-danger d-flex justify-content-center mx-auto my-2">Submit</button>
-        <br />
-        <span id="resultContainer"></span>
-    </form>
+            <hr>
 
-    <!-- Script JS -->
-    <script src="script.js"></script>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/c387a6ff36.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                h1 {
+                    text-align: center;
+                }
+
+                .outer-grid {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                }
+
+                .inner-grid {
+                    flex: 25%;
+                    max-width: 25%;
+                    padding: 0 4px;
+                }
+
+                .inner-grid img {
+                    margin-top: 8px;
+                    width: 100%;
+                    padding: 10px;
+                }
+
+                @media screen and (max-width: 800px) {
+                    .inner-grid {
+                        flex: 50%;
+                        max-width: 50%;
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    .inner-grid {
+                        flex: 100%;
+                        max-width: 100%;
+                    }
+                }
+            </style>
+
+            <body>
+                <h1>My Photos</h1>
+                <div class="outer-grid">
+                    <div class="inner-grid">
+                        <img src="10.jpg">
+                        <img src="">
+                        <img src="" />
+                    </div>
+                    <div class="inner-grid">
+                        <img src="11.jpg">
+
+                    </div>
+                    <div class="inner-grid">
+                        <img src="66.jpg">
+
+                    </div>
+                </div>
+            </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="w3-section">
+    <p>Ask any Querry, Contact me:</p>
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Agra (Uttar pradesh), India</p>
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Phone: +918529488194</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: chaharanil568@gmail.com</p>
+</div><br>
+
+<!-- Footer -->
+
+<style>
+    footer {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    div {
+        text-align: center;
+    }
+</style>
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://www.facebook.com/anil.chahar.397/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://instagram.com/anilchahar1?igshid=ZDdkNTZiNTM=/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://wa.me/qr/2HAEKSN6XDZTB1"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+
+
+    <a href="https://t.me/engineerstalkwithanil"><i class="fa fa-telegram w3-hover-opacity"></i></a>
+
+    <a href="https://www.linkedin.com/in/anil-c-561262199"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+
+
+    <p class="w3-medium">Powered by <a href="#" target="_blank" class="w3-hover-text-green">Anil chahar</a></p>
+    <!-- End footer -->
+</footer>
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
